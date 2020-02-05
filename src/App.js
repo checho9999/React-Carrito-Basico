@@ -1,4 +1,4 @@
-import React , { Fragment } from 'react';
+import React , { Fragment, useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Producto from './components/Producto';
@@ -12,6 +12,9 @@ function App() {
     { id: 3, nombre: 'Remera Negra', precio: 30 },
     { id: 4, nombre: 'Remera Marron', precio: 20 },
   ];
+
+   // useState para agregar/eliminar productos del carrito de compras
+   const [ carrito, agregarProducto  ] = useState([]);
 
   // fecha para el footer
   const fecha = new Date().getFullYear();
@@ -28,6 +31,9 @@ function App() {
             <Producto 
                 key={producto.id}
                 producto={producto}
+                productos={productos}
+                carrito={carrito}
+                agregarProducto={agregarProducto}
             />
         ))}
         
