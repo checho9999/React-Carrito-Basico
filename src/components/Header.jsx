@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Header({titulo}) {
+function Header( {titulo} ) {
     return(
-        <h1>Desde el Header</h1>
+        <h1 className="encabezado">{titulo}</h1>
     )
 }
 
 export default Header;
+
