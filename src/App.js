@@ -4,9 +4,7 @@ import Header from './components/Header';
 function App() {
 
   return (
-        <Header 
-          titulo='Tienda Virtual'
-        />
+        <Header />
   );
 }
 
