@@ -1,5 +1,6 @@
 import React from 'react';
 import Producto from './Producto';
+import './carrito.css';
 
 const Carrito = ({carrito, agregarProducto}) => ( 
     <div className="carrito">

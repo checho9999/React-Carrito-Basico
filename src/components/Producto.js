@@ -5,10 +5,9 @@ const Producto = ( { producto, productos, carrito, agregarProducto } ) => {
 // hago destructuracion de las props de la lista de productos que llegan desde la app principal
 const { id, nombre, precio } = producto;
 
-    // Agregar producto al carrito
     const seleccionarProducto = id => {
-        const producto = productos.filter(producto => producto.id === id )[0];
-        
+        const producto = productos.filter(producto => producto.id === id )[0];     
+
         agregarProducto([
             ...carrito, 
             producto
